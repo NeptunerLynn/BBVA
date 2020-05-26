@@ -1,0 +1,273 @@
+body{
+    color: #A4BCD1;
+    font-size: 13px;
+    font-family: Arial;
+}
+#mainContent{
+    padding: 3em 5em;
+    background: -webkit-linear-gradient(#073262,#082247,#073262); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#073262,#082247, #073262); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#073262,#082247, #073262); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#073262,#082247, #073262); /* 标准的语法 */
+}
+header.main_header{
+    background:#073161;
+    padding: 2em 5em;
+}
+header.main_header div{
+    float: right;
+    font-size: 4em;
+    font-weight: bold;
+    color: #2BCACB;
+    margin-top:1em;
+}
+header.main_header h1{
+    font-size: 8em;
+    font-family: fantasy;
+}
+header.main_header h3{
+    font-size: 5em;
+    font-weight: bold;
+    color: #2BCACB;
+}
+.half_card{
+    float: left;
+    padding: 1em;
+    position: relative;
+}
+.card{
+    float: left;
+    padding: 1em;
+    position: relative;
+}
+.content{
+    clear: both;
+}
+.half_card .card_inside,
+.card .card_inside{
+    background: #073262;
+    padding: 2em;
+    height:480px;
+}
+.half_card .card_inside_2{
+    padding:3em;
+}
+.half_card .card_inside_2,
+.card .card_inside_2{
+    height:990px;
+}
+.special_card_left{
+    float : left;
+    font-size : 17px;
+    margin:1.5em 0;
+}
+.special_card_left .icon{
+    color:#2DCDCD;
+}
+.special_card_right{
+    float : right;
+    font-size : 17px;
+    margin:1.5em 0;
+}
+.bar_block{
+    clear: both;
+    height:10px;
+    background:rgba(0,0,0,0.2);
+    position: relative;
+}
+.bar_block .bar_inside{
+    position: absolute;
+    top:0;
+    left: 0;
+    height:10px;
+    background:#2DCDCD;
+}
+@media only screen and (min-width: 1400px) {
+    .half_card{
+        width:50%;
+    }
+    .card{
+        width:25%;
+    }
+    .special_card{
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 1400px) and (min-width: 986px) {
+    .half_card{
+        width:100%;
+    }
+    .card{
+        width:50%;
+    }
+    .middle_content .card{
+        width: 100%;
+    }
+    .middle_content .card .card_inside_2{
+        height:240px;
+    }
+    .middle_content .card .card_inside_2 .card_inside{
+        width: 49%;
+        float: left;
+    }
+    .special_card{
+        margin-right: 2%;
+    }
+}
+@media (max-width: 986px) and (min-width: 76px) {
+    .half_card{
+        width:100%;
+    }
+    .card{
+        width:100%;
+    }
+    .middle_content .card{
+        width: 100%;
+    }
+    .middle_content .card .card_inside_2{
+        height:480px;
+    }
+    .middle_content .card .card_inside_2 .card_inside{
+        width: 100%;
+        float: left;
+    }
+}
+.card_header{
+    color:#2B8ACF;
+    font-weight: bold;
+}
+.sub_card_header{
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+.sub_card_header i{
+    color: #E7C876;
+}
+.sub_card_header span{
+    float: right;
+}
+.sub_card_header small{
+    margin-left: 0.5em;
+    float: right;
+}
+.chart_content{
+    height:85%;
+}
+.card_enter{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #2B8ACF;
+    left: 0;
+    bottom:2em;
+}
+.card_enter span{
+    padding: 0.3em;
+    cursor: pointer;
+    position: relative;
+}
+.card_enter span:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 0;
+    background: #2B8ACF;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+.card_enter span:hover:after{
+    left: 0;
+    width: 100%;
+}
+.card_check{
+    width : 50%;
+    float : left;
+}
+.card_check div{
+    margin-bottom: 4em;
+}
+.card_check.active div{
+    color: #2B8ACF;
+}
+.card_check span{
+    font-size: 2.8em;
+}
+.card_check.active span{
+    font-size: 2em;
+}
+.card_check small{
+    margin-left: 0.5em;
+    font-size: 1.5em;
+}
+.tiny_chart{
+    height: 110px;
+}
+.part_4{
+    margin-top: 2em;
+}
+.part_4 .coffee{
+    color: #D8BE75;
+    font-size: 1.6em;
+}
+.part_4 .shopping{
+    color: #2DCDCD;
+    font-size: 1.6em;
+}
+.part_4_title{
+    font-size: 1.5em;
+}
+.line_chart_bottom_text_1{
+    border-top:1px solid #2DCDCD;
+    border-bottom:1px solid #2DCDCD;
+    padding:1em;
+    color: #2DCDCD;
+}
+.line_chart_bottom_text_2{
+    padding:1em;
+    color: #FF555F;
+}
+#line_chart_middle_left_bottom{
+    height:330px;
+}
+
+/*中间模块*/
+#center{
+    height:100%;
+}
+#center .top_part{
+    height:40%;
+    padding:1.5em 1em;
+}
+#center .top_part #top_part_chart{
+    height:90%;
+}
+#center .middle_part{
+    height:35%;
+    padding:1.5em 1em;
+}
+#center .bottom_part{
+    height:25%;
+    padding:1.5em 1em;
+}
+#center .middle_part .scatter{
+    height : 100%;
+    width : 50%;
+    float: left;
+    position: relative;
+}
+#ene{
+    margin-top: 5%;
+    height:90%;
+}
+#septembre{
+    height:90%;
+}
+#gastosSalud{
+    height:90%;
+}
+#percentPie{
+    height:80%;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBVA demo</title>
+    <link rel="stylesheet" href="plugins/Semantic-UI-master/dist/semantic.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main_header">
+        <div>2016 - 2017</div>
+        <h1>BBVA</h1>
+        <h3>Infographics<br/>System</h3>
+    </header>
+    <div id="mainContent">
+        <!--第一行-->
+        <div class="top_content content">
+            <div class="card">
+                <div class="card_inside">
+                    <div class="card_header">GASTOS HOGAR</div>
+                    <div class="sub_card_header">
+                        <i class="home icon"></i>
+                        <small>20€</small>
+                        <span id="num1"></span>
+                    </div>
+                    <div class="chart_content" id="gastos_hogar"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside">
+                    <div class="card_header">MY EXPENSES</div>
+                    <div class="sub_card_header">
+                        <small>20€</small>
+                        <span id="num2"></span>
+                    </div>
+                    <div class="chart_content" id="my_expenses"></div>
+                    <div class="card_enter"><span>view more</span></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside">
+                    <div>
+                        <div class="card_check">
+                            <div>Last Week</div>
+                            <span id="num3"></span>
+                            <small>20€</small>
+                            <p>In 10 transicciones</p>
+                        </div>
+                        <div class="card_check active">
+                            <div>Last Moth</div>
+                            <span id="num4"></span>
+                            <small>20€</small>
+                            <p>proyecctión de gastos</p>
+                        </div>
+                    </div>
+                    <div class="chart_content" id="gastos_past_data"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside">
+                    <div class="card_header">BY CATEGORY</div>
+                    <div class="part_4">
+                        <div class="part_4_title" style="float: right">
+                            <span id="num5"></span>
+                            <small>00€</small>
+                        </div>
+                        <div class="part_4_title">
+                            <i class="coffee icon"></i> FOOD & DINING
+                        </div>
+                        <div class="tiny_chart" id="food_dining"></div>
+                        <div class="card_check">
+                            <span id="num6"></span>
+                            <small>00€</small>
+                            <p>In 10 transicciones</p>
+                        </div>
+                        <div class="card_check" style="text-align: right">
+                            <span id="num7"></span>
+                            <small>00€</small>
+                            <p>In 10 transicciones</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="part_4">
+                        <div class="part_4_title" style="float: right">
+                            <span id="num8"></span>
+                            <small>00€</small>
+                        </div>
+                        <div class="part_4_title">
+                            <i class="shopping basket icon"></i> SHOPPING
+                        </div>
+                        <div class="tiny_chart" id="shopping"></div>
+                        <div class="card_check">
+                            <span id="num9"></span>
+                            <small>00€</small>
+                            <p>In 10 transicciones</p>
+                        </div>
+                        <div class="card_check" style="text-align: right">
+                            <span id="num10"></span>
+                            <small>00€</small>
+                            <p>In 10 transicciones</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--中间部分-->
+        <div class="middle_content content">
+            <div class="card">
+                <div class="card_inside_2">
+                    <div class="card_inside special_card">
+                        <div class="card_header">CATEGORIES INGRESOS</div>
+                        <div>
+                            <div>
+                                <div class="special_card_left">
+                                    <i class="dollar icon"></i>
+                                    Nómina
+                                </div>
+                                <div class="special_card_right">
+                                    <span id="num11"></span>
+                                    <small>00€</small>
+                                </div>
+                            </div>
+                            <div class="bar_block">
+                                <div class="bar_inside" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="special_card_left">
+                                    <i class="exchange icon"></i>
+                                    Transferencia
+                                </div>
+                                <div class="special_card_right">
+                                    <span id="num12"></span>
+                                    <small>92€</small>
+                                </div>
+                            </div>
+                            <div class="bar_block">
+                                <div class="bar_inside" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="special_card_left">
+                                    <i class="euro icon"></i>
+                                    Efectivo
+                                </div>
+                                <div class="special_card_right">
+                                    <span id="num13"></span>
+                                    <small>92€</small>
+                                </div>
+                            </div>
+                            <div class="bar_block">
+                                <div class="bar_inside" style="width: 15%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="special_card_left">
+                                    <i class="repeat icon"></i>
+                                    Devolución
+                                </div>
+                                <div class="special_card_right">
+                                    <span id="num14"></span>
+                                    <small>92€</small>
+                                </div>
+                            </div>
+                            <div class="bar_block">
+                                <div class="bar_inside" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="special_card_left">
+                                    <i class="line chart icon"></i>
+                                    Inversión
+                                </div>
+                                <div class="special_card_right">
+                                    <span id="num15"></span>
+                                    <small>92€</small>
+                                </div>
+                            </div>
+                            <div class="bar_block">
+                                <div class="bar_inside" style="width: 5%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_inside">
+                        <div>
+                            <div style="float: right;font-size:2em;">
+                                <span>232,240</span>
+                                <small>20€</small>
+                            </div>
+                            <b style="font-size: 15px;">26 OCT</b>
+                        </div>
+                        <div id="line_chart_middle_left_bottom">
+
+                        </div>
+                        <div class="line_chart_bottom_text_1">
+                            <div style="float: right;">
+                                <span>8,240</span>
+                                <small>20€</small>
+                            </div>
+                            <div>224 sales</div>
+                        </div>
+                        <div class="line_chart_bottom_text_2">
+                            <div style="float: right;">
+                                <span>-1,080</span>
+                                <small>80€</small>
+                            </div>
+                            <div>10 devoluxions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half_card">
+                <div class="card_inside_2 card_inside">
+                    <div id="center">
+                        <div class="top_part">
+                            <div style="font-size: 22px;margin-bottom: 0.5em;">
+                                Mi dinero
+                                <span id="num16"></span>
+                                <small>20€</small>
+                            </div>
+                            <div class="card_header"><i class="book icon"></i>12 meses</div>
+                            <div id="top_part_chart">
+
+                            </div>
+                        </div>
+                        <div class="middle_part">
+                            <div class="card_header"><i class="book icon"></i>12 meses</div>
+                            <div class="scatter">
+                                <div style="font-size:17px;position: absolute;right: 2em;top: 0.4em;">
+                                    <span id="num17"></span>
+                                    <small>92€</small>
+                                </div>
+                                <div style="width:100%;height:100%" id="scatter1"></div>
+                            </div>
+                            <div class="scatter">
+                                <div style="font-size:17px;position: absolute;right: 2em;top: 0.4em;">
+                                    <span id="num18"></span>
+                                    <small>92€</small>
+                                </div>
+                                <div style="width:100%;height:100%" id="scatter2"></div>
+                            </div>
+                        </div>
+                        <div class="bottom_part">
+                            <div class="card_header"><i class="book icon"></i>12 meses</div>
+                            <div style="font-size:17px;margin-top: 0.5em"><i style="color : #DCC075" class="home icon"></i> House: expenses evolution</div>
+                            <div style="width: 100%;height: 80%;" id="expenses_evolution"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside_2">
+                    <div class="card_inside special_card">
+                        <div style="float: right;font-size:2em;">
+                            <span id="num19"></span>
+                            <small>20€</small>
+                        </div>
+                        <div class="card_header">16 ENE</div>
+                        <div id="ene"></div>
+                    </div>
+                    <div class="card_inside">
+                        <div class="card_header">Septembre 2016</div>
+                        <div style="margin-top:0.5em;font-size:2em;">
+                            <span id="num20"></span>
+                            <small>20€</small>
+                        </div>
+                        <div id="septembre"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--末尾行-->
+        <div class="bottom_content content">
+            <div class="card">
+                <div class="card_inside">
+                    <div style="margin-bottom: 1.5em;padding-bottom: 1.5em;border-bottom: 1px solid #A4BCD1;">
+                        <div class="card_header" style="float:right;"><i class="minus icon"></i></div>
+                        <div style="font-size: 1.2em;">02 / 01 / 2016</div>
+                        <div class="sub_card_header">
+                            <i class="home icon"></i>
+                            <span style="font-size: 22px;">-1,000.00€</span>
+                        </div>
+                        <div style="color:#E7C876;font-size: 18px;">House</div>
+                        <div style="font-size: 1.2em;margin-top: 0.5em;">
+                            expenses include monthly fee of rent.light.and heating.
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1.5em;padding-bottom: 1.5em;border-bottom: 1px solid #A4BCD1;">
+                        <div class="card_header" style="float:right;"><i class="plus icon"></i></div>
+                        <div style="font-size: 1.2em;">02 / 01 / 2016</div>
+                        <div class="sub_card_header">
+                            <i class="add circle icon" style="color:#2ED0CF;"></i>
+                            <span style="font-size: 22px;">-115.00€</span>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1.5em;padding-bottom: 1.5em;border-bottom: 1px solid #A4BCD1;">
+                        <div class="card_header" style="float:right;"><i class="plus icon"></i></div>
+                        <div style="font-size: 1.2em;">02 / 01 / 2016</div>
+                        <div class="sub_card_header">
+                            <i class="shopping basket icon" style="color:#2982C5;"></i>
+                            <span style="font-size: 22px;">-80.15€</span>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1.5em;padding-bottom: 1.5em;">
+                        <div class="card_header" style="float:right;"><i class="plus icon"></i></div>
+                        <div style="font-size: 1.2em;">02 / 01 / 2016</div>
+                        <div class="sub_card_header">
+                            <i class="gift icon" style="color:#F96161;"></i>
+                            <span style="font-size: 22px;">-110.00€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside">
+                    <div class="card_header">GASTOS SALUD</div>
+                    <div class="sub_card_header">
+                        <i class="add circle icon" style="color:#2982C5;font-size: 22px;"></i>
+                        <span style="font-size: 22px;">-1,000.00€</span>
+                    </div>
+                    <div id="gastosSalud"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside">
+                    <div class="card_header" style="text-align: center"><i class="calendar icon"></i>26/10/2016</div>
+                    <div id="percentPie"></div>
+                    <div>
+                        <div style="font-size: 22px;color: #2DCDCD;text-align: center;margin-bottom: 0.5em;">-300€</div>
+                        <div style="font-size: 22px;text-align: center">Compared to your budget limit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inside">
+                    <div class="card_header">CATEGORIES GASTOS</div>
+                    <div style="font-size: 1.5em;margin: 1em 0;">
+                        <span>232,240</span>
+                        <small>20€</small>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="special_card_left">
+                                <i class="home icon" style="color: #D8BE75;"></i>
+                                House
+                            </div>
+                            <div class="special_card_right">
+                                <span>1,000</span>
+                                <small>92€</small>
+                            </div>
+                        </div>
+                        <div class="bar_block">
+                            <div class="bar_inside" style="width: 100%;background: #D8BE75;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="special_card_left">
+                                <i class="add circle icon" style="color: #2DCDCD;"></i>
+                                Health
+                            </div>
+                            <div class="special_card_right">
+                                <span>500</span>
+                                <small>92€</small>
+                            </div>
+                        </div>
+                        <div class="bar_block">
+                            <div class="bar_inside" style="width: 50%;background: #2DCDCD;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="special_card_left">
+                                <i class="shopping basket icon" style="color: #2A86CA;"></i>
+                                Shopping
+                            </div>
+                            <div class="special_card_right">
+                                <span>200</span>
+                                <small>92€</small>
+                            </div>
+                        </div>
+                        <div class="bar_block">
+                            <div class="bar_inside" style="width: 25%;background: #2A86CA;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="special_card_left">
+                                <i class="gift icon" style="color: #F35E61;"></i>
+                                Clothes
+                            </div>
+                            <div class="special_card_right">
+                                <span>100</span>
+                                <small>92€</small>
+                            </div>
+                        </div>
+                        <div class="bar_block">
+                            <div class="bar_inside" style="width: 10%;background: #F35E61;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</body>
+    <script src="plugins/jquery-3.2.1.min.js"></script>
+    <script src="plugins/echarts.min.js"></script>
+    <script src="plugins/Semantic-UI-master/dist/semantic.min.js"></script>
+    <script src="plugins/countUp/countUp.min.js"></script>
+    <script src="js/main.js"></script>
+</html>
